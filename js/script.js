@@ -8,7 +8,7 @@ navItems.forEach(item => {
 document.querySelector('.item1').classList.add('active');
 
 // JavaScript to add "is-sticky" class when user scrolls down
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
 
     if (window.scrollY > 100) {
@@ -22,11 +22,26 @@ window.addEventListener('scroll', function() {
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         useClassNames: true,
         initClassName: false,
         animatedClassName: 'animated',
         duration: 1000,
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const offcanvas = document.getElementById('navbarNav');
+    const links = offcanvas.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+            if (offcanvasInstance) {
+                offcanvasInstance.hide(); // Закрыть меню
+            }
+        });
     });
 });

@@ -10,7 +10,7 @@
                  alt="Logo" class="img-fluid img-logo">
         </a>
         <nav class="navbar navbar-expand-lg justify-content-center align-items-center w-100 ">
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="container d-flex justify-content-end align-items-center">
                 <!-- Burger Menu Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +25,13 @@
                     </div>
                     <div class="offcanvas-body d-flex justify-content-between align-baseline gap-2 ">
                         <div class="navbar-nav gap-4">
-                            <a class="nav-link active" href="#Որոշումներ"><?= $ml->tr('administrative')?></a>
-                            <a class="nav-link active" href="#ԱՏԳ ԱԱ"><?= $ml->tr('atg')?></a>
-                            <a class="nav-link active" href="#Կարգավորում"><?= $ml->tr('regulatory')?></a>
-                            <a class="nav-link active" href="#Կիրառում"><?= $ml->tr('apply')?></a>
-                            <a class="nav-link active" href="#Ակտեր"><?= $ml->tr('addition')?></a>
-                            <a class="nav-link active" href="#Ընթացիկ ձևակերպումներ"><?= $ml->tr('current')?></a>
-                            <a class="nav-link active" href="#Այլ հարցեր"><?= $ml->tr('other_questions_nav')?></a>
+                            <a class="nav-link active" href="#Որոշումներ"><?= $ml->tr('administrative') ?></a>
+                            <a class="nav-link active" href="#ԱՏԳ ԱԱ"><?= $ml->tr('atg') ?></a>
+                            <a class="nav-link active" href="#Կարգավորում"><?= $ml->tr('regulatory') ?></a>
+                            <a class="nav-link active" href="#Կիրառում"><?= $ml->tr('apply') ?></a>
+                            <a class="nav-link active" href="#Ակտեր"><?= $ml->tr('addition') ?></a>
+                            <a class="nav-link active" href="#Ընթացիկ ձևակերպումներ"><?= $ml->tr('current') ?></a>
+                            <a class="nav-link active" href="#Այլ հարցեր"><?= $ml->tr('other_questions_nav') ?></a>
                         </div>
                         <div class="d-flex align-items-center dropdownMobile">
                             <div class="me-3 d-flex align-items-center gap-2">
@@ -45,7 +45,8 @@
                             <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
                                         data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/flags/<?= array_values($selected)[0]['flag']?>" alt="<?=array_keys($selected)[0]?>" style="height: 20px;">
+                                    <img src="./images/flags/<?= array_values($selected)[0]['flag'] ?>"
+                                         alt="<?= array_keys($selected)[0] ?>" style="height: 20px;">
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                                     <?php
