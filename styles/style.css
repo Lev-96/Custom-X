@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+    font-family: "system-ui", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.img-nav {
+    width: 100px !important;
+}
+ .img-logo {
+     width: 100%;
+     height: 100%;
+ }
+
+.header {
+    width: 100%;
+}
+
+.header_images {
+    background-image: url("/images/background/custom-header.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+
+
+header.position-sticky {
+    position: sticky;
+    top: -100px;
+    z-index: 1050;
+    background-color: rgba(255, 255, 255, 0.31);
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+/* When the header becomes sticky */
+header.is-sticky {
+    top: 0;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.22);
+    z-index: 1000;
+}
+
+header .container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+header .container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header #languageDropdown {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.page__wrapper {
+    padding: 4rem 2rem;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.card:not(:last-of-type) {
+    margin-bottom: 5rem;
+}
+
+.card__tags {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0;
+    color: #555;
+}
+
+.card__title {
+    font-size: 1.7rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #333;
+}
+
+.card__desc {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.7;
+    color: #777;
+}
+
+
+.card-blue {
+    background-color: #2d8faa91;
+}
+
+.card-dark {
+    background-color: #1750705e;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    .card__title {
+        font-size: 1.4rem;
+    }
+
+    .card__desc {
+        font-size: 0.95rem;
+    }
+}
+[data-aos] {
+    visibility: hidden;
+}
+[data-aos].animated {
+    visibility: visible;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.scroll-counter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.aos-all {
+    width: 1000px;
+    max-width: 98%;
+    margin: 50px auto;
+}
+
+.aos-item {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+
+.aos-item::before {
+    content: attr(data-id);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: dodgerblue;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 420px) {
+    .aos-item {
+        width: 100%;
+        height: 85vh;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aos-item {
+        width: 100%;
+        height: 85vh;
+        margin-bottom: 20px;
+    }
+}
+
+.aos-anchors__lines {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid red;
+}
+
+.aos-anchors__lines::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: green;
+}
+
+.aos-anchors__sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.aos-anchors__sidebar > div {
+    padding: 5px 10px;
+    background: #f1f1f1;
+}
+
+.aos-anchors__content {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.aos-anchors__content > div {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    background: #f1f1f1;
+    line-height: 300px;
+    text-align: center;
+    color: #333;
+}
+
+.aos-anchors__content > div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.aos-anchors__content > div::after {
+    content: attr(data-anchor-id);
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.aos-anchors__content > div[data-placement$="-bottom"]::before {
+    background-color: red;
+}
+
+.aos-anchors__content > div[data-placement$="-center"]::before {
+    background-color: green;
+}
+
+.aos-anchors__content > div[data-placement$="-top"]::before {
+    background-color: blue;
+}
+
+.aos-anchors__content > div[data-placement^="top-"]::before {
+    top: 0;
+}
+
+.aos-anchors__content > div[data-placement^="center-"]::before {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.aos-anchors__content > div[data-placement^="bottom-"]::before {
+    bottom: 0;
+}

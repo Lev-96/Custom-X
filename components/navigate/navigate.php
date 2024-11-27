@@ -1,0 +1,74 @@
+<?php
+/** @var  $selected */
+/** @var  $remainLang */
+/** @var  $ml */
+?>
+<header class="py-2" style="z-index: 1050;">
+    <div class="container-custom d-flex justify-content-between align-items-center">
+        <a href="/" class="navbar-brand img-nav">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDUuNTEgNTEyLjg2Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzJkOGZhYTt9LmNscy0ye2ZpbGw6IzBmNGE2Yjt9LmNscy0ze2ZpbGw6IzhiYjRjNjt9LmNscy00e2ZpbGw6IzFmMjI0NDt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNDUxLjI3IDI1MS4zMiA0NjkuNjQgMjUxLjMyIDM5OC4xNiAxNzkuODMgMzI2LjY3IDI1MS4zMiAzNDUuMDQgMjUxLjMyIDM5OC4xNiAxOTguMiA0NTEuMjcgMjUxLjMyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5OC4xNiAyMTguNTEgNDMwLjk3IDI1MS4zMiA0NTEuMjcgMjUxLjMyIDM5OC4xNiAxOTguMiAzNDUuMDQgMjUxLjMyIDM2NS4zNCAyNTEuMzIgMzk4LjE2IDIxOC41MSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyODcuMDMgMjMyLjk1IDM5OC4xNiAxMjEuODIgNTA5LjI5IDIzMi45NSA1NzguOTYgMjMyLjk1IDU5Ny4zMyAyNTEuMzIgNjI2LjMzIDI1MS4zMiA1NzguOTYgMjAzLjk1IDUwOS4yOSAyMDMuOTUgMzk4LjE2IDkyLjgyIDI4Ny4wMyAyMDMuOTUgMjE2LjQ1IDIwMy45NSAxNjkuMDcgMjUxLjMyIDE5OC4wOCAyNTEuMzIgMjE2LjQ1IDIzMi45NSAyODcuMDMgMjMyLjk1Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5OC4xNiAxNTAuODMgNDk4LjY1IDI1MS4zMiA1OTcuMzMgMjUxLjMyIDU3OC45NiAyMzIuOTUgNTA5LjI5IDIzMi45NSAzOTguMTYgMTIxLjgyIDI4Ny4wMyAyMzIuOTUgMjE2LjQ1IDIzMi45NSAxOTguMDggMjUxLjMyIDI5Ny42NiAyNTEuMzIgMzk4LjE2IDE1MC44MyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI1NzYgMTc3Ljg0IDU3NS4yNyAxNzcuODQgNTIzLjg1IDE1NC42OSAzOTguMTYgMjkgMjcyLjQ0IDE1NC43MiAyNzIuNDQgMTU0LjY5IDIyMS4wMSAxNzcuODQgMjIwLjMxIDE3Ny44NCAzOTguMTYgMCA1NzYgMTc3Ljg0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjM5OC4xNiAyOSAyNzIuNDQgMTU0LjcyIDI3OC4yMyAxNzcuODQgMjc4LjMzIDE3Ny44NCAzOTguMTYgNTguMDEgNTE3Ljk5IDE3Ny44NCA1MTguMDUgMTc3Ljg0IDUyMy44NSAxNTQuNyAzOTguMTYgMjkiLz48cG9seWdvbiBjbGFzcz0iY2xzLTMiIHBvaW50cz0iNTc1LjI3IDE3Ny44NCA1MTguMDQgMTc3Ljg0IDUyMy44NSAxNTQuNjkgNTc1LjI3IDE3Ny44NCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIyNzguMjMgMTc3Ljg0IDIyMS4wMSAxNzcuODQgMjcyLjQ0IDE1NC42OSAyNzIuNDQgMTU0LjcyIDI3OC4yMyAxNzcuODQiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zMS41OSw0MDMuMjRxLTEyLjE2LDAtMTktMy40M0ExOS4xOCwxOS4xOCwwLDAsMSwzLDM4OS41MnEtMi43NC02Ljg2LTIuNzUtMTdWMzM0LjNxMC0xNi40Niw3LjM4LTI0LjI2dDI0LTcuOEg4My4yMXExMS44MywwLDE4LjA5LDEuMjh0Ni4yNiwyLjY2bC0zLjQzLDE0LjIzcS0yLjkxLS41MS0xNy4yMy0xLjExdC00MS41OS0uNkgzNi41N3EtMTMuNzIsMC0xMy43MiwxMi4xN1YzNzQuNnEwLDUuODMsMyw5dDEwLjcyLDMuMThoN3EyOC40NiwwLDQ0LjE1LS42dDE5LjQ3LTEuMjlsNywxMS4zMmMwLC41Ny0uOTQsMS40My0yLjgzLDIuNTdTMTA2LjA3LDQwMSwxMDEsNDAxLjg3cy0xMi4yOSwxLjM3LTIxLjc3LDEuMzdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTUwLjYsNDAzLjI0cS04LjQsMC0xMy4xMi0yLjIzYTE0LjU5LDE0LjU5LDAsMCwxLTYuNjktNS42NiwxOC42NSwxOC42NSwwLDAsMS0yLjQtNy4yLDYyLjM3LDYyLjM3LDAsMCwxLS40Mi02Ljg2VjMyNi40MmgyMC45MnY1NS4yMXEtLjE4LDMuNzgsMi40OCw1LjMyYTExLjI0LDExLjI0LDAsMCwwLDUuNzUsMS41NGgzMy45NWMyLjUxLDAsNC0uMjMsNC40Ni0uNjhzLjY4LTEuOTUuNjgtNC40NlYzMjYuNDJoMjAuOTN2NzYuODJIMjAzLjA3bC02LjUxLTMuNDNxLTYuODcsMS4zOC0xNi4yMSwyLjRhMTkyLjMxLDE5Mi4zMSwwLDAsMS0yMSwxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI1Ny4wOSw0MDMuMjRxLTExLjQ5LDAtMTYuMjktMS4ydC00LjgtMi40bDUuMTQtMTIuODZxNSwuNTEsMTguMjcsMS4xMXQzMi44My42aDguNThxNC4yOCwwLDUuNC0yLjMxYTE0LjY5LDE0LjY5LDAsMCwwLDEuMTEtNi4yNiwxMy40NywxMy40NywwLDAsMC0xLjI4LTYuMzVxLTEuMjktMi40LTUuMjMtMi40SDI1OC42M3EtMTIsMC0xNy4zMi00LjU0VDIzNiwzNTN2LTYuODVhMzcuMjcsMzcuMjcsMCwwLDEsLjUxLTUuNjYsMTcuNCwxNy40LDAsMCwxLDIuNTctNi41MiwxNS4yMiwxNS4yMiwwLDAsMSw2LjY5LTUuNHE0LjY0LTIuMTUsMTIuODYtMi4xNEgzMDZxMTAuMjksMCwxNC41OCwxLjJjMi44NS44LDQuMjksMS42LDQuMjksMi40bC0xLjcyLDEyLjg2cS01LS41My0xOC4zNS0xLjEydC0zMi43NS0uNmgtOC41N3EtNC4yOSwwLTUuNDEsMi4zMmExMi4zNCwxMi4zNCwwLDAsMC0xLjExLDUuNCwxMS42OSwxMS42OSwwLDAsMCwxLjExLDUuNHExLjEzLDIuMTQsNS40MSwyLjE0aDQyLjE4cTExLjY1LDAsMTcuMTUsNC44MWExNS40OSwxNS40OSwwLDAsMSw1LjQ4LDEyLjE3djEwLjEyYTUzLjQ5LDUzLjQ5LDAsMCwxLS40Miw2LjUxLDE0LjUsMTQuNSwwLDAsMS0yLjQ5LDYuNDQsMTQuMzIsMTQuMzIsMCwwLDEtNi42OSw0Ljg4cS00LjYzLDEuODktMTMsMS44OVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNzcsNDAzLjI0cS0xMywwLTE3LjgzLTUuNDl0LTQuOC0xNi40NlYzNDEuMTZIMzQwLjI2VjMyNi40Mmg3LjJhOC4zOCw4LjM4LDAsMCwwLDQuNzEtMXExLjQ1LTEsMi4xNS00LjEybDMuNDMtMTguMzVoMTcuNDl2MjMuNWgzNS42N3YxNC43NEgzNzUuMjR2NDAuM2MwLDIuODYuNjgsNC43NSwyLjA2LDUuNjZzMy40MywxLjM3LDYuMTcsMS4zN2gyNC4xOGwxLjcxLDEzcS0zLjYuNTMtMTEsMS4xMnQtMTYuMTIuNloiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NDUuNTQsNDAzLjI0cS0xMS40OSwwLTE3LjA2LTQuNjN0LTUuNTctMTUuMDlWMzQ4LjM2YTU0LjU5LDU0LjU5LDAsMCwxLC40My02LjI1LDE5LjY4LDE5LjY4LDAsMCwxLDIuNC03LjI5LDE1LDE1LDAsMCwxLDYuNjktNnE0LjcxLTIuNCwxMy4xMS0yLjRoNDcuMzNxOC41OCwwLDEzLjIxLDIuNGExNS4yMSwxNS4yMSwwLDAsMSw2LjYsNiwyMC4wNSwyMC4wNSwwLDAsMSwyLjQsNy4yOSw1Nyw1NywwLDAsMSwuNDMsNi4yNXYzMi45M2E2Mi41NSw2Mi41NSwwLDAsMS0uNDMsNi44NiwxNy43MSwxNy43MSwwLDAsMS0yLjQ5LDcuMiwxNS4xNSwxNS4xNSwwLDAsMS02LjY4LDUuNjZxLTQuNjQsMi4yNC0xMywyLjIzWm02LjUyLTE0Ljc1aDM0LjNxOC40LDAsOC40LTYuODZWMzQ4cTAtNi44Ni04LjQtNi44NmgtMzQuM3EtOC4yNCwwLTguMjMsNi44NnYzMy42MVE0NDMuODMsMzg4LjUsNDUyLjA2LDM4OC40OVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01MzQuMzcsNDAzLjI0VjMyNi40MmgxNC4wNmw0LjI5LDIuMDVjMy4zMi0uNTcsNy4zNy0xLjA1LDEyLjE4LTEuNDVzMTAuNTEtLjYsMTcuMTQtLjZoOC41OGEzNS42MywzNS42MywwLDAsMSw5LjYsMS4yOCwxNC40NywxNC40NywwLDAsMSw2Ljg2LDMuNjksNDUuNjQsNDUuNjQsMCwwLDEsMTIuMzUtMy42QTEyMy44MSwxMjMuODEsMCwwLDEsNjQwLDMyNi40Mmg4LjU4YzUuNzEsMCwxMC4xMi44LDEzLjIsMi40YTE1LjEsMTUuMSwwLDAsMSw2LjYsNiwxOS44OSwxOS44OSwwLDAsMSwyLjQxLDcuMjksNTYuNjYsNTYuNjYsMCwwLDEsLjQyLDYuMjV2NTQuODhINjUwLjI5VjM0OHEwLTYuODYtOC4yMy02Ljg2aC0yNGE3LjI3LDcuMjcsMCwwLDAtMy43Ny42OWMtLjY4LjQ2LTEsMS40OS0xLDMuMDl2NTguM0g1OTIuMzNWMzQ4cTAtNi44Ni04LjIzLTYuODZINTYwLjQ0cS0zLjI3LDAtNC4yLjZjLS42My40LTEsMS40Ni0xLDMuMTh2NTguM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02ODIuMzYsNDAzLjI0LDY4OC44OCwzOTNsMzguMDYtNDAuMTMtNDQuNTgtNTAuNDFINzA5LjhsMzMuMDksMzcuOWgxLjg5bDMzLjI3LTM3LjloMjcuNDNsLTYuNjksMTAuMTEtMzcuODksNDAuMyw0NC41OCw1MC40Mkg3NzguMDVMNzQ0Ljc4LDM2NWgtMS44OUw3MDkuOCw0MDMuMjRaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjM3LDQ4NS4yMWMwLDExLjA2LDcsMTguOTQsMTcsMTguOTQsNy4yNywwLDExLjg5LTMuNzksMTQuNzctN2w2LjA2LDYuMjlhMjYuODksMjYuODksMCwwLDEtMjAuMyw5LjA5Yy0xNS45MSwwLTI2LjM3LTEyLTI2LjM3LTI3LjJzMTAuMzgtMjcuMzQsMjYuMDctMjcuMzRBMjYuMzEsMjYuMzEsMCwwLDEsMjc0LDQ2Ni41N2wtNi4wNiw2LjI5YTE3LjI4LDE3LjI4LDAsMCwwLTE0LjMxLTYuNTlDMjQzLjkzLDQ2Ni4yNywyMzcsNDc0LjIyLDIzNyw0ODUuMjFaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjgzLjA5LDQ4NS4yMWMwLTE1LjIzLDkuOTMtMjcuMjcsMjUuNjEtMjcuMjdzMjUuNiwxMiwyNS42LDI3LjI3LTkuOTIsMjcuMjctMjUuNiwyNy4yN1MyODMuMDksNTAwLjQ0LDI4My4wOSw0ODUuMjFabTQyLjM1LDBjMC0xMS4wNi03LjA1LTE4Ljk0LTE2Ljc0LTE4Ljk0UzI5Miw0NzQuMTUsMjkyLDQ4NS4yMXM3LjA1LDE4Ljk0LDE2Ljc1LDE4Ljk0UzMyNS40NCw0OTYuMjcsMzI1LjQ0LDQ4NS4yMVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNDQuNTMsNTExLjczVjQ1Ny41NkwzNzgsNDkxLjM1VjQ1OC42OWg4LjcxdjU0LjE3bC0zMy40OC0zMy43OXYzMi42NloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00MjMuNDYsNDcwLjgyYTEwLjIxLDEwLjIxLDAsMCwwLTguODYtNC41NWMtMy43OSwwLTYuODIsMi4yNy02LjgyLDUuNjgsMCw0Ljc3LDQuNjIsNiwxMC43Niw4LjcxQzQyNiw0ODQsNDMyLDQ4OC4wOSw0MzIsNDk2LjVjMCw5Ljg1LTcsMTYtMTcuMTIsMTYtMTEsMC0xNi43NC03LjE5LTE4LjMzLTEyLjU3bDcuMzUtNC4yNWMxLjM2LDQuNDcsNS4wNyw4LjQ5LDExLDguNDksNC4zOSwwLDguMTgtMi40Miw4LjE4LTcuNDIsMC00LjQ4LTQuNDctNi42Ny0xMC4wNy05LTguNDEtMy40OS0xNC40LTcuNDMtMTQuNC0xNS4zLDAtOC44Nyw2LjktMTQuNDcsMTYtMTQuNDcsNy4xMiwwLDEyLjI3LDMuMzMsMTUsNy4zNFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00NzQuODIsNDU4LjY5aDguNzF2MjkuMDljMCwxNS4zMS01LjY4LDI0LjctMjAuODMsMjQuN3MtMjAuODMtOS4zMi0yMC44My0yNC42MlY0NTguNjloOC43MXYzMi43M2MwLDguMTEsNC41NCwxMi43MywxMi4xMiwxMi43M3MxMi4xMi00LjcsMTIuMTItMTIuNjVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTI2LjQxLDUwMy4zOXY4LjM0SDQ5NS42NXYtNTNoOC43MXY0NC43WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTU0My44Myw1MTEuNzNWNDY3SDUyOS40NHYtOC4zNGgzNy41VjQ2N2gtMTQuNHY0NC43WiIvPjxsaW5lIGNsYXNzPSJjbHMtNCIgeTE9IjQ5MS40NyIgeDI9IjE4OS4zOCIgeTI9IjQ5MS42Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB5PSI0ODkuMDEiIHdpZHRoPSIxODkuMzgiIGhlaWdodD0iNS4wNSIvPjxsaW5lIGNsYXNzPSJjbHMtNCIgeDE9IjYxNi4xMiIgeTE9IjQ4Ny44MSIgeDI9IjgwNS41IiB5Mj0iNDg4LjA1Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI3MDguMjkiIHk9IjM5My4yNCIgd2lkdGg9IjUuMDUiIGhlaWdodD0iMTg5LjM4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMjIgMTE5OC4xMykgcm90YXRlKC04OS45MykiLz48L2c+PC9nPjwvc3ZnPg=="
+                 alt="Logo" class="img-fluid img-logo">
+        </a>
+        <nav class="navbar navbar-expand-lg justify-content-center align-items-center w-100 ">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Burger Menu Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-between align-baseline gap-2 ">
+                        <div class="navbar-nav gap-4">
+                            <a class="nav-link active" href="#Որոշումներ"><?= $ml->tr('administrative')?></a>
+                            <a class="nav-link active" href="#ԱՏԳ ԱԱ"><?= $ml->tr('atg')?></a>
+                            <a class="nav-link active" href="#Կարգավորում"><?= $ml->tr('regulatory')?></a>
+                            <a class="nav-link active" href="#Կիրառում"><?= $ml->tr('apply')?></a>
+                            <a class="nav-link active" href="#Ակտեր"><?= $ml->tr('addition')?></a>
+                            <a class="nav-link active" href="#Ընթացիկ ձևակերպումներ"><?= $ml->tr('current')?></a>
+                            <a class="nav-link active" href="#Այլ հարցեր"><?= $ml->tr('other_questions_nav')?></a>
+                        </div>
+                        <div class="d-flex align-items-center dropdownMobile">
+                            <div class="me-3 d-flex align-items-center gap-2">
+                                <div class="d-flex align-items-center justify-content-space-between gap-2 ">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjEuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDEwMC4zNTQgMTAwLjM1MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwLjM1NCAxMDAuMzUyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTQ5LjI0NCw2Ny42MDljLTIuNjU0LDEuNjM4LTYuNTE4LDAuNzc5LTguMTA3LTEuNzk3bC0xMS40OS0xOC42MjFjLTEuNjE1LTIuNjE4LTAuODAxLTYuMDYxLDEuODE1LTcuNjc1bC0wLjc4OC0xLjI3NgoJCWwwLjc4OCwxLjI3NmwxMC4wNS02LjIwNWwtOC44NDktMTQuMzM3bC0xMC4wNDQsNi4ybDAsMGMtOS44NTMsNi4wODEtOS41MzIsMjIuMDA1LDAuNzgyLDM4LjcyMwoJCWM0LjcyLDcuNjUxLDEwLjY2MywxMy43MzYsMTYuNzMyLDE3LjEzNWMzLjU3NCwyLjAwMSw3LjA5NiwzLjAwNiwxMC4zNzcsMy4wMDVjMi43NTUsMCw1LjM0LTAuNzA4LDcuNjQ0LTIuMTNsOS42NjctNS45NjMKCQlsLTguODQ5LTE0LjM0MUw0OS4yNDQsNjcuNjA5eiBNNTYuNTc5LDc5LjM1NGMtNS4yMjgsMy4yMjctMTEuMDMyLDEuMjcxLTE0Ljk3OS0wLjk0Yy01LjYzMi0zLjE1My0xMS4xODgtOC44NjgtMTUuNjQ1LTE2LjA5MgoJCWMtOS4zODYtMTUuMjE2LTEwLjEwOS0yOS40NDItMS43NTktMzQuNTk2bC0wLjc4OC0xLjI3NmwwLjc4OCwxLjI3Nmw3LjQ5LTQuNjI0bDUuNjk4LDkuMjMybC03LjQ5OCw0LjYyOWwwLDAKCQljLTQuMDI0LDIuNDgzLTUuMjc2LDcuNzc4LTIuNzkyLDExLjgwM2wxMS40ODksMTguNjJjMi40NTYsMy45ODMsOC4xNzQsNS4yNzgsMTIuMjM1LDIuNzc1bDcuMTc3LTQuNDNsNS42OTgsOS4yMzNMNTYuNTc5LDc5LjM1NHoKCQkiLz4KCTxwYXRoIGQ9Ik01OS41ODcsNDAuNTkzYzIuMjI1LDMuNDE2LDIuNzYsNy42MDEsMS40NjcsMTEuNDgzbDIuODQ3LDAuOTQ4YzEuNTgzLTQuNzU0LDAuOTI3LTkuODgyLTEuNzk5LTE0LjA2NwoJCWMtMi44MDktNC4zMjYtNy41Ny03LjA5LTEyLjczNi03LjM5NmwtMC4xNzcsMi45OTVDNTMuNDcsMzQuODA5LDU3LjI2LDM3LjAwOSw1OS41ODcsNDAuNTkzeiIvPgoJPHBhdGggZD0iTTUxLjM5NiwyMS42MzZsLTAuMzQzLDIuOThjNi45NjksMC44MDEsMTMuMTU1LDQuNjI1LDE2Ljk3MywxMC40ODljMy42OTcsNS42ODUsNC43NDUsMTIuNjg1LDIuODczLDE5LjIwOGwyLjg4NCwwLjgyNwoJCWMyLjExMS03LjM1OCwwLjkzLTE1LjI1Ny0zLjI0Mi0yMS42NzFDNjYuMjMzLDI2Ljg1Miw1OS4yNTYsMjIuNTM5LDUxLjM5NiwyMS42MzZ6Ii8+Cgk8cGF0aCBkPSJNNzguMDE3LDI4LjYwNEM3Mi40NCwyMC4wMjcsNjMuNDI5LDE0LjI5OSw1My4yOTUsMTIuODlsLTAuNDEzLDIuOTcyYzkuMjcyLDEuMjg5LDE3LjUxNyw2LjUzLDIyLjYyLDE0LjM3OAoJCWM1LDcuNjgxLDYuNSwxNy4xNjcsNC4xMTYsMjYuMDI4bDIuODk3LDAuNzc5Qzg1LjEyLDQ3LjM2NSw4My40OCwzNi45OTcsNzguMDE3LDI4LjYwNHoiLz4KPC9nPgo8L3N2Zz4K"
+                                         alt="phone" style="height: 25px; width: 25px;">
+                                    <a href="tel:+37499656780" class="text-decoration-none text-dark p-2">+374 99 656
+                                        780</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./images/flags/<?= array_values($selected)[0]['flag']?>" alt="<?=array_keys($selected)[0]?>" style="height: 20px;">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    <?php
+                                    foreach ($remainLang as $key => $value):?>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center" href="?lang=<?= $key ?>">
+                                                <img src="./images/flags/<?= $value['flag'] ?>" alt="<?= $key ?>"
+                                                     style="height: 20px;"
+                                                     class="me-2">
+                                                <?= $value['name'] ?>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</header>
+<div class="container-fluid p-0 header">
+    <div class="row justify-content-center header_images"></div>
+</div>
