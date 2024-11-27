@@ -48,7 +48,7 @@
                                     <img src="./images/flags/<?= array_values($selected)[0]['flag'] ?>"
                                          alt="<?= array_keys($selected)[0] ?>" style="height: 20px;">
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <ul class="dropdown-menu" id="dropRight" aria-labelledby="languageDropdown">
                                     <?php
                                     foreach ($remainLang as $key => $value):?>
                                         <li>

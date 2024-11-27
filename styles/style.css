@@ -57,7 +57,7 @@ header.is-sticky {
     top: 0;
     opacity: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.22);
+    background-color: rgb(255 255 255 / 80%);
     z-index: 1000;
 }
 
@@ -71,7 +71,10 @@ header .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
-
+header #dropRight.show {
+    right: 0;
+    left: auto;
+}
 header #languageDropdown {
     background-color: rgba(255, 255, 255, 0);
 }
