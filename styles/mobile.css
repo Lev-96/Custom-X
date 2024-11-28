@@ -185,6 +185,24 @@
         width: 100%;
     }
 }
+
+@media (max-width: 767px) {
+    .mobilePosition{
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .nav_text {
+        font-family: "Regular 400", serif;
+        font-size: 11px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        padding: 20px;
+        text-transform: uppercase;
+         letter-spacing: 0;
+    }
+}
 /* Large devices (992px and above) */
 @media (min-width: 992px) {
     .card__title {

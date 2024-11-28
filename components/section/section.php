@@ -5,7 +5,7 @@ $sectorArr = [
     'Որոշումներ' => [
         'text' => $ml->tr('release_control_department')
     ],
-    'ԱՏԳ ԱԱ' => [
+    'ԱՏԳ_ԱԱ' => [
         'text' => $ml->tr('decisions_codes')
     ],
     'Կարգավորում' => [
@@ -17,10 +17,13 @@ $sectorArr = [
     'Ակտեր' => [
         'text' => $ml->tr('decisions_related_customs_value_addition')
     ],
-    'Ընթացիկ ձևակերպումներ' => [
+    'Ընթացիկ_ձևակերպումներ' => [
         'text' => $ml->tr('decisions_related_current_formulations')
     ],
-    'Այլ հարցեր' => [
+    'Մաքսային_խորհրդատվություն' => [
+        'text' => $ml->tr('decisions_consulting')
+    ],
+    'Այլ_հարցեր' => [
         'text' => $ml->tr('other_questions')
     ],
 ]

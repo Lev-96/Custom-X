@@ -32,13 +32,43 @@ body {
     width: 100%;
 }
 
+.bg-col {
+    background: #6c757d26;
+}
 .header_images {
-    background-image: url("/images/background/custom-header.jpeg");
+    background-image: url("/images/background/customx-bg.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height:100vh;
+}
+
+.nav_text {
+    font-family: "Regular 400", serif;
+    font-size: 1.20rem;
+    text-align: center;
+    font-weight: bold;
+    width: 85%;
+    text-transform: uppercase;
+    color: #1e0502;
+    letter-spacing: 0.4rem;
+    margin: 0;
+}
+.phone-link {
+    display: none;
+}
+.navbar-nav .nav-link {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
