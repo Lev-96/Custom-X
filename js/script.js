@@ -7,15 +7,35 @@ navItems.forEach(item => {
 });
 document.querySelector('.item1').classList.add('active');
 
-// JavaScript to add "is-sticky" class when user scrolls down
 window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-
-    if (window.scrollY > 100) {
-        header.classList.add('is-sticky', 'position-sticky', 'top-0', 'container-fluid');
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > navbar.offsetTop) {
+        navbar.classList.add('sticky');
     } else {
-        header.classList.remove('is-sticky', 'position-sticky', 'top-0', 'container-fluid');
+        navbar.classList.remove('sticky');
     }
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (window.scrollY > 200) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+// Close the offcanvas menu when a nav-link is clicked
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const offcanvas = document.querySelector("#navbarNavAltMarkup");
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+            if (bsOffcanvas) {
+                bsOffcanvas.hide();
+            }
+        });
+    });
 });
 //add year
 

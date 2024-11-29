@@ -118,6 +118,10 @@
     footer .btn {
         font-size: 1.1rem;
     }
+    .phoneItem{
+        white-space: nowrap;
+        flex-direction: column;
+    }
 }
 
 /* Tablet (576px and above) */
@@ -178,11 +182,19 @@
         height: 300px;
     }
 }
+@media (max-width: 768px) {
+    .card__title {
+        font-size: 1.5rem;
+    }
+}
 @media (max-width: 992px) {
 
     .dropdownMobile {
         flex-direction: column;
         width: 100%;
+    }
+    .nav_text {
+        font-size: 14px;
     }
 }
 
