@@ -14,10 +14,10 @@
                 </div>
                 <div class="col d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-end">
                     <h4 class="nav_text text-align-center"><?= $ml->tr('text_nav')?></h4>
-                    <div class="d-flex align-items-center justify-content-center me-3 gap-3 phoneItem">
+                    <div class="d-flex align-items-center justify-content-center me-3 gap-1 flex-column phoneItem">
                         <div class="d-flex align-items-center">
                             <img src="./images/icons/phone.svg" alt="" class="phone-icon">
-                            <a href="tel:+37494844452" class="text-decoration-none text-dark ms-2">+374 99 656 780</a>
+                            <a href="tel:+37494844452" class="text-decoration-none text-dark ms-2 text-nowrap">+374 99 656 780</a>
                         </div>
                         <div class="dropdown mt-3 mt-sm-0">
                             <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
