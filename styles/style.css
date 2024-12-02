@@ -56,7 +56,7 @@
 }
 
 .nav-img {
-    width: 100px;
+    width: 130px;
 }
 .img-logo {
     width: 100%;
@@ -118,10 +118,28 @@
 #scrollToTopBtn:hover {
     background-color: #0056b3;
 }
+
 html, body {
     background-color: #f9f9f9;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+a[href^="#"] {
+    scroll-margin-top: 80px;
+}
+
+.row[id] {
+    scroll-margin-top: 120px;
+}
+
+html {
+    scroll-padding-top: 120px;
+}
+
+.row:last-child {
+    scroll-margin-bottom: 80px;
+}
+
 
 #scrollToTopBtn {
     position: fixed;
@@ -201,11 +219,11 @@ html, body {
 
 
 .card-blue {
-    background-color: #2d8faa91;
+    background-color: #2d8faa2b;
 }
 
 .card-dark {
-    background-color: #1750705e;
+    background-color: #17507029;
 }
 
 @media (max-width: 767px) {
