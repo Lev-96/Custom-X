@@ -2,7 +2,7 @@
 /** @var  $ml */
 ?>
 <footer class="bg-body-tertiary text-center text-lg-start">
-    <div class="container p-4">
+    <div class="container-fluid p-4">
         <div class="row">
             <!-- Map Section -->
             <div class="col-lg-8 col-md-12 mb-4 mb-md-0">

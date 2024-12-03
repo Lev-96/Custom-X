@@ -13,7 +13,7 @@
                     </a>
                 </div>
                 <div class="col d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-end">
-                    <h4 class="nav_text text-align-center"><?= $ml->tr('text_nav')?></h4>
+                    <h4 class="nav_text text-align-center lh-base"><?= $ml->tr('text_nav')?></h4>
                     <div class="d-flex align-items-center justify-content-center me-3 gap-1 flex-column phoneItem">
                         <div class="d-flex align-items-center">
                             <img src="./images/icons/phone.svg" alt="" class="phone-icon">
@@ -61,14 +61,14 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav mx-auto">
-                        <a class="nav-link mb-3 active" href="#Որոշումներ"><?= $ml->tr('administrative') ?></a>
-                        <a class="nav-link mb-3 active" href="#ԱՏԳ_ԱԱ"><?= $ml->tr('atg') ?></a>
-                        <a class="nav-link mb-3 active" href="#Կարգավորում"><?= $ml->tr('regulatory') ?></a>
-                        <a class="nav-link mb-3 active" href="#Կիրառում"><?= $ml->tr('apply') ?></a>
-                        <a class="nav-link mb-3 active" href="#Ակտեր"><?= $ml->tr('addition') ?></a>
-                        <a class="nav-link mb-3 active" href="#Ընթացիկ_ձևակերպումներ"><?= $ml->tr('current') ?></a>
-                        <a class="nav-link mb-3 active" href="#Մաքսային_խորհրդատվություն"><?= $ml->tr('customs_consulting') ?></a>
-                        <a class="nav-link mb-3 active" href="#Այլ_հարցեր"><?= $ml->tr('other_questions_nav') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Որոշումներ"><?= $ml->tr('administrative') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#ԱՏԳ_ԱԱ"><?= $ml->tr('atg') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Կարգավորում"><?= $ml->tr('regulatory') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Կիրառում"><?= $ml->tr('apply') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Ակտեր"><?= $ml->tr('addition') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Ընթացիկ_ձևակերպումներ"><?= $ml->tr('current') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Մաքսային_խորհրդատվություն"><?= $ml->tr('customs_consulting') ?></a>
+                        <a class="nav-link mb-3 border-0 text-center active" href="#Այլ_հարցեր"><?= $ml->tr('other_questions_nav') ?></a>
                     </div>
                 </div>
             </div>

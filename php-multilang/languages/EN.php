@@ -1,8 +1,8 @@
 <?php
 
 $EN = [
-    'administrative' => 'Post-clearance decisions',
-    'atg' => 'Customs code of HTS and Customs',
+    'administrative' => 'Post-release solutions',
+    'atg' => 'Customs HS Codes',
     'regulatory' => 'Non-tariff regulations',
     'apply' => 'Use of privileges',
     'addition' => 'Customs value',
@@ -11,7 +11,7 @@ $EN = [
     'other_questions_nav' => 'Other issues',
 
 
-    'about' => "<h1>CustomX Consult</h1>CustomX Consult is the first company in Armenia that files appeals decisions taken by customs authorities and provides consulting services on customs issues, with years of experience and a professional team.If an economic entity disagrees with the decisions taken by customs authorities and wishes to appeal them, we will assist in this matter.<br>In particular, the following decisions may be appealed:",
+    'about' => "<h1>CustomX Consult</h1>CustomX Consult is the first company in Armenia that files appeals decisions taken by customs authorities and provides consulting services on customs issues, with years of experience and a professional team.If an economic entity disagrees with the decisions taken by customs authorities and wishes to appeal them, we will assist in this matter.<br><br>In particular, the following decisions may be appealed:",
     'text_nav' => 'Customs Solutions - Opportunities for Business Development and Expansion',
     "release_control_department" => "<h1>Decisions of the Post-Release Control Department:</h1>Sometimes, after the release of goods, the Post-Release Control Department makes decisions to impose administrative fines and/or sanctions on business entities as a result of inspections. In such cases, it may happen that the Customs authorities did not take into account significant circumstances that may have a crucial impact on the outcome of the case in favor of the business entity.",
     "decisions_codes" => "<h1>Decisions related to HS codes </h1> Very often, business entities do not agree with the HS codes proposed by the customs authorities, which can happen both during customs clearance and after the release of goods.",
